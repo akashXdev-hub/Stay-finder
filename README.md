@@ -64,8 +64,8 @@ StayFinder is a full-stack web application that allows users to search, view, an
 ### 1. Clone the Repository
 
 cd stayfinder
-cd frontend
-npm install
+cd frontend--
+npm install--
 cd backend
 npm install
 
