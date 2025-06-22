@@ -1,0 +1,76 @@
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; /* Space between navbar and search bar */
+}
+
+.search-bar-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: white;
+  border-radius: 999px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  max-width: 900px;
+  width: 100%;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.search-field {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 16px;
+  border-right: 1px solid #e5e7eb;
+  justify-content: center;
+}
+
+.search-field:last-child {
+  border-right: none;
+}
+
+.search-field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.search-field input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #6b7280;
+  background: transparent;
+  width: 100%;
+}
+
+.search-field.who {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 999px 999px 0;
+}
+
+.search-btn {
+  background-color: #1d4ed8;
+  border: none;
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+.search-btn:hover {
+  background-color: #e11d48;
+}
+
+.search-icon {
+  font-size: 14px;
+}

@@ -1,0 +1,222 @@
+/* Container for booking and summary */
+.booking-section-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 30px;
+}
+
+/* Card Styles Shared */
+.booking-card,
+.summary-card {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e2e2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 420px;
+  flex: 1;
+}
+
+/* Hover effect */
+.booking-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* Booking Form Layout */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.booking-form label {
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fff;
+  transition: border 0.2s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: #60a5fa;
+  outline: none;
+}
+
+.book-btn {
+  background: #ff5a5f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 16px;
+}
+
+.book-btn:hover {
+  background: #0c2791;
+}
+
+/* Booking Section Overview */
+.booking-section {
+  margin-top: 20px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 340px;
+  border-top: 1px solid #ccc;
+}
+
+.booking-section input {
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* Summary Card (hidden by default) */
+.summary-card {
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  background-color: #fefefe;
+  padding: 24px 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e2e2e2;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  max-width: 460px;
+  width: 100%;
+  margin-top: 20px;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Show when active */
+.summary-card.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.summary-card h3 {
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.summary-card p {
+  font-size: 15.5px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.summary-card p strong {
+  color: #555;
+  font-weight: 600;
+}
+
+.summary-card hr {
+  margin: 16px 0;
+  border: none;
+  border-top: 1px dashed #ccc;
+}
+
+.summary-card .total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111;
+}
+
+/* Thank You Message */
+.thank-you-message {
+  margin-top: 20px;
+  padding: 14px;
+  background-color: #eafaf1;
+  border: 1px solid #c8f2da;
+  border-radius: 8px;
+  color: #2c7a4b;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.price-description-section {
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.price-description-section p {
+  margin-bottom: 12px;
+  font-size: 16.5px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.price-description-section p strong {
+  font-weight: 600;
+  color: #222;
+}
+
+.price-description-section .price-tag {
+  font-size: 20px;
+  color: #2a25cb;
+  font-weight: bold;
+}
+.availability-calendar {
+  margin-top: 30px;
+  border: 1px solid #eee;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #fefefe;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+}
+
+.availability-calendar h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Optional: Customize highlighted days */
+.react-datepicker__day--highlighted-custom {
+  background-color: #ffcdd2;
+  color: #b71c1c;
+  border-radius: 50%;
+}
