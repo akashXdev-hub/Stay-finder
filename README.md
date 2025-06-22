@@ -63,17 +63,17 @@ StayFinder is a full-stack web application that allows users to search, view, an
 
 ### 1. Clone the Repository
 
-cd stayfinder
-cd frontend--
-npm install--
-cd backend
-npm install
+-cd stayfinder
+-cd frontend
+-npm install
+-cd backend
+-npm install
 
 --run backend ---
-cd backend 
-node server.js
+-cd backend 
+-node server.js
 
 --run frontend--
-cd frontend
-npm start
+-cd frontend
+-npm start
 
