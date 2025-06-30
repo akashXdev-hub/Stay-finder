@@ -47,7 +47,7 @@ const BecomeHostForm = () => {
         }
       });
 
-      await axios.post('http://localhost:5000/api/listings', formData, {
+      await axios.post('https://stayfinder-backend.onrender.com/api/listings', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
 

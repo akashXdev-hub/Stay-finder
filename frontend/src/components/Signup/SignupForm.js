@@ -13,7 +13,7 @@ const SignupForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/signup', form);
+      const res = await axios.post('https://stayfinder-backend.onrender.com/api/auth/signup', form);
       setMessage('Signup successful! You can now log in.');
       console.log(res.data); // You may store token or show message
     } catch (err) {

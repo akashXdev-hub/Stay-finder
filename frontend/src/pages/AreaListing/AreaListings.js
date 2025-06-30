@@ -16,7 +16,7 @@ const AreaListings = () => {
 
     const fetchListings = async () => {
       try {
-       const res = await axios.get(`http://localhost:5000/api/listings/area/${selectedArea}`);
+       const res = await axios.get(`https://stayfinder-backend.onrender.com/api/listings/area/${selectedArea}`);
 
         setListings(res.data);
       } catch (err) {

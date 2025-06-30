@@ -62,7 +62,7 @@ const ListingDetails = () => {
         checkInDate: form.checkInDate?.toISOString(),
         checkOutDate: form.checkOutDate?.toISOString(),
       };
-      await axios.post('http://localhost:5000/api/bookings', bookingData);
+      await axios.post('https://stayfinder-backend.onrender.com/api/bookings', bookingData);
       setMessage('Booking successful!');
     } catch (err) {
       console.error(err);

@@ -20,8 +20,8 @@ useEffect(() => {
   const fetchListings = async () => {
     try {
       const [gurgaonRes, delhiRes] = await Promise.all([
-        axios.get('http://localhost:5000/api/listings/area/gurgaon'),
-        axios.get('http://localhost:5000/api/listings/area/delhi'),
+        axios.get('https://stayfinder-backend.onrender.com/api/listings/area/gurgaon'),
+        axios.get('https://stayfinder-backend.onrender.com/api/listings/area/delhi'),
       ]);
 
       console.log('Gurgaon listings:', gurgaonRes.data);
